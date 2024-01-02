@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchAgnostic", "BinarySearchAgnostic\BinarySearchAgnostic.csproj", "{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. BinarySearch", "1. BinarySearch", "{4A259368-DA16-4ED1-BAF5-DD7CFBB37BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteArray", "InfiniteArray\InfiniteArray.csproj", "{63B7CA9A-E51D-490D-A6BB-6DF47D077206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeakIndexInMountainArr", "PeakIndexInMountainArr\PeakIndexInMountainArr.csproj", "{3CA8479D-2B91-4379-BA44-456ADE795EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "121. BestTimeToSell", "121. BestTimeToSell\121. BestTimeToSell.csproj", "{0A14AFB4-CD77-4B2F-A778-F27477A2694C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Arrays", "2. Arrays", "{C4A06814-DCEF-4B18-B424-42BE079617C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B7CA9A-E51D-490D-A6BB-6DF47D077206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B7CA9A-E51D-490D-A6BB-6DF47D077206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B7CA9A-E51D-490D-A6BB-6DF47D077206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B7CA9A-E51D-490D-A6BB-6DF47D077206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA8479D-2B91-4379-BA44-456ADE795EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA8479D-2B91-4379-BA44-456ADE795EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA8479D-2B91-4379-BA44-456ADE795EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA8479D-2B91-4379-BA44-456ADE795EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A14AFB4-CD77-4B2F-A778-F27477A2694C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A14AFB4-CD77-4B2F-A778-F27477A2694C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A14AFB4-CD77-4B2F-A778-F27477A2694C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A14AFB4-CD77-4B2F-A778-F27477A2694C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED7FADA3-0506-4758-95AA-FF5CFEEC8D18} = {4A259368-DA16-4ED1-BAF5-DD7CFBB37BBA}
+		{17D3EDB4-CAB5-47A2-8B48-938BEC10E0AF} = {4A259368-DA16-4ED1-BAF5-DD7CFBB37BBA}
+		{63B7CA9A-E51D-490D-A6BB-6DF47D077206} = {4A259368-DA16-4ED1-BAF5-DD7CFBB37BBA}
+		{3CA8479D-2B91-4379-BA44-456ADE795EFD} = {4A259368-DA16-4ED1-BAF5-DD7CFBB37BBA}
+		{0A14AFB4-CD77-4B2F-A778-F27477A2694C} = {C4A06814-DCEF-4B18-B424-42BE079617C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7CDE47F-2C5B-4671-B17D-98336F7FCC8F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\bin\Debug\_121.BestTimeToSell.exe.config
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\bin\Debug\_121.BestTimeToSell.exe
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\bin\Debug\_121.BestTimeToSell.pdb
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\obj\Debug\121. BestTimeToSell.csproj.AssemblyReference.cache
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\obj\Debug\121. BestTimeToSell.csproj.CoreCompileInputs.cache
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\obj\Debug\_121.BestTimeToSell.exe
+C:\Users\deric\OneDrive\Área de Trabalho\Hard Learning\Data Structures and Algorithms\DataStructures\DataStructuresAndAlgorithms\121. BestTimeToSell\obj\Debug\_121.BestTimeToSell.pdb
