@@ -11,7 +11,7 @@ namespace InfiniteArray
     {
         static void Main(string[] args)
         {
-            checksInfinite(new int[] { 1, 23, 45, 67, 43, 100, 200, 3000, 5664, 32456, 43433, 12512, 4636332, 3253256, 3253296, 3283296 }, 200);      
+            checksInfinite(new int[] { 1, 23, 45, 67, 43, 100, 200, 3000, 5664, 32456, 43433, 12512, 4636332, 3253256, 3253296, 3283296, 3283298 }, 200);      
         }
 
         public static int checksInfinite(int[] arr, int target)
