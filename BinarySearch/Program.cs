@@ -10,11 +10,11 @@ namespace BinarySearch
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 3, 4, 5, 6};
+            int[] arr = { 1, 2, 3, 4, 5, 6 };
 
             search(arr, 0, arr.Length - 1, 4);
         }
-
+        //2
         public static int search(int[] arr, int start, int end, int target)
         {
             while(start <= end) 
