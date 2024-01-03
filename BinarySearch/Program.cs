@@ -14,7 +14,7 @@ namespace BinarySearch
 
             search(arr, 0, arr.Length - 1, 4);
         }
-        //2
+        //22
         public static int search(int[] arr, int start, int end, int target)
         {
             while(start <= end) 
