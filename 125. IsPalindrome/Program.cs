@@ -10,7 +10,8 @@ namespace _125.IsPalindrome
     {
         static void Main(string[] args)
         {
-            ispalindrome("a man, a plan, a canal: panama");
+            Console.WriteLine(ispalindrome("a man, a plan, a canal: panama"));
+            Console.Read();
         }
         public static bool ispalindrome(string s)
         {
