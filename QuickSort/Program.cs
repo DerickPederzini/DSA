@@ -22,7 +22,7 @@ namespace QuickSort
                 return;
             }
 
-                int s = low;
+            int s = low;
             int e = high;
             int m = s + (e - s) / 2;
             int pivot = arr[m];
