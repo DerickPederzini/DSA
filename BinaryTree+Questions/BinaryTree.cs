@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BinaryTree_Questions
+{
+    public class BinaryTree
+    {
+        public BinaryTree()
+        {
+
+        }
+
+        private class Node
+        {
+            public int value;
+            public Node left = null;
+            public Node right = null;
+
+            public Node(int value)
+            {
+                this.value = value;
+            }
+        }
+
+        private Node root;
+
+        // insert elements, start with root node and populate the other elemnts
+        public void populate()
+        {
+            Console.WriteLine("Enter the root Node: ");
+            int value = Convert.ToInt32(Console.ReadLine());
+            root = new Node(value);
+            populate(root);
+        }
+
+        //creates elements and their pointers
+        private void populate(Node node)
+        {
+            Console.WriteLine("Do you want to enter left of " + node.value);
+            bool left = Convert.ToBoolean(Console.ReadLine());
+            if (left)
+            {
+                Console.WriteLine("Enter the value of the left of " + node.value);
+                int value = Convert.ToInt32(Console.ReadLine());
+                node.left = new Node(value);
+                populate(node.left);
+            }
+
+            Console.WriteLine("Do you want to enter right of " + node.value);
+            bool right = Convert.ToBoolean(Console.ReadLine());
+            if (right)
+            {
+                Console.WriteLine("Enter the value of the right of " + node.value);
+                int value = Convert.ToInt32(Console.ReadLine());
+                node.right = new Node(value);
+                populate(node.right);
+            }
+
+        }
+
+        public void Traversal(BinaryTree tree)
+        {
+            Node root = tree.root;
+            Traversal(root);
+        }
+
+        private void Traversal(Node root)
+        {
+
+            Stack<Node> stack = new Stack<Node>();
+            stack.Push(root);
+
+            while (stack.Count > 0)
+            { 
+                Node node = stack.Pop();
+                Console.WriteLine(node.value);
+
+                if(node.right != null) stack.Push(node.right);
+
+                if(node.left != null) stack.Push(node.left);
+
+            }
+        }
+
+        public int[] TraversalValues(BinaryTree tree)
+        {
+            Node root = tree.root;
+            return TraversalValues(root);
+        }
+
+        private int [] TraversalValues(Node root)
+        {
+            if(root == null)
+            {
+                return new int[] { };
+            }
+            int [] left = TraversalValues(root.left);
+            int [] right = TraversalValues(root.right);
+
+            int[] result = new int[left.Length + right.Length + 1];
+            result[0] = root.value;
+            left.CopyTo(result, 1);
+            right.CopyTo(result, left.Length + 1);
+
+            return result;
+        }
+    }
+}
