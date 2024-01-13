@@ -74,13 +74,13 @@ namespace BinaryTree_Questions
             stack.Push(root);
 
             while (stack.Count > 0)
-            { 
+            {
                 Node node = stack.Pop();
                 Console.WriteLine(node.value);
 
-                if(node.right != null) stack.Push(node.right);
+                if (node.right != null) stack.Push(node.right);
 
-                if(node.left != null) stack.Push(node.left);
+                if (node.left != null) stack.Push(node.left);
 
             }
         }
@@ -91,14 +91,14 @@ namespace BinaryTree_Questions
             return TraversalValues(root);
         }
 
-        private int [] TraversalValues(Node root)
+        private int[] TraversalValues(Node root)
         {
-            if(root == null)
+            if (root == null)
             {
                 return new int[] { };
             }
-            int [] left = TraversalValues(root.left);
-            int [] right = TraversalValues(root.right);
+            int[] left = TraversalValues(root.left);
+            int[] right = TraversalValues(root.right);
 
             int[] result = new int[left.Length + right.Length + 1];
             result[0] = root.value;
@@ -106,6 +106,30 @@ namespace BinaryTree_Questions
             right.CopyTo(result, left.Length + 1);
 
             return result;
+        }
+
+        public bool isBalanced(BinaryTree tree)
+        {
+            Node root = tree.root;
+            return isBalanced(root);
+        }
+        private bool isBalanced(Node root)
+        {
+            if (root == null) return true;
+
+            if (height(root) == -1) return false;
+            return true;
+        }
+        private int height(Node root)
+        {
+            if (root == null) return 0;
+
+            int left = height(root.left);
+            int right = height(root.right);
+
+            if (left == -1 || right == -1) return -1;
+            if (Math.Abs(left - right) > 1) return -1;
+            return Math.Max(left, right) + 1;
         }
     }
 }

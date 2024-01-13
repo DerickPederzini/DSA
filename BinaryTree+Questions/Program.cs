@@ -14,10 +14,12 @@ namespace BinaryTree_Questions
             BinaryTree bt = new BinaryTree();
 
             bt.populate();
+            bt.isBalanced(bt);
 
-            //bt.Traversal(bt);
+            bt.Traversal(bt);
 
             int[] arr = bt.TraversalValues(bt);
+
 
             foreach (int i in arr)
             {
