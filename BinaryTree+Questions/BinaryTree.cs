@@ -60,7 +60,6 @@ namespace BinaryTree_Questions
             }
 
         }
-
         public void Traversal(BinaryTree tree)
         {
             Node root = tree.root;
@@ -108,6 +107,9 @@ namespace BinaryTree_Questions
             return result;
         }
 
+
+
+        //https://leetcode.com/problems/balanced-binary-tree/
         public bool isBalanced(BinaryTree tree)
         {
             Node root = tree.root;
@@ -130,6 +132,52 @@ namespace BinaryTree_Questions
             if (left == -1 || right == -1) return -1;
             if (Math.Abs(left - right) > 1) return -1;
             return Math.Max(left, right) + 1;
+        }
+
+        //https://leetcode.com/problems/invert-binary-tree/
+
+        private Node InvertTree(BinaryTree tree)
+        {
+            Node root = tree.root;
+            return InvertTree(root);
+        }
+        private Node InvertTree(Node root)
+        {
+            if(root == null) return null;
+
+            Node temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+
+            InvertTree(root.left);
+            InvertTree(root.right);
+
+            return root;
+        }
+
+        //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+        private Node LowestCommonAncestor(BinaryTree tree, Node q, Node p)
+        {
+            Node root = tree.root;
+            return LowestCommonAncestor(root, q, p);
+        }
+        private Node LowestCommonAncestor(Node root, Node q, Node p)
+        {
+            Node current = root;  
+
+            while(current != null)
+            {
+                if (root.value < q.value && root.value < p.value)
+                    current = current.right;
+                else if (root.value > q.value && root.value > p.value)
+                    current = current.left;
+                else
+                    return current;
+                
+            }
+
+            return null;
+
         }
     }
 }
