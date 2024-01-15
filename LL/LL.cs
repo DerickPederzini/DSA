@@ -256,20 +256,36 @@ namespace LL
             }
 
             Node prev = null;
-            Node present = head;
-            Node next = present.next;
+            Node current = head;
+            Node next = current.next;
 
-            while (present != null)
+            while(current != null)
             {
-                present.next = prev;
-                prev = present;
-                present = next;
+                current.next = prev;
+                prev = current;
+                current = next;
                 if (next != null)
                 {
                     next = next.next;
                 }
             }
             head = prev;
+
+        }
+
+        //https://leetcode.com/problems/middle-of-the-linked-list/
+        public Node MiddleNode(Node head)
+        {
+            Node fast = head;
+            Node slow = head;
+
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+            return slow;
         }
 
         public class Node

@@ -19,8 +19,12 @@ namespace LL
 
             second.insertLast(1);
             second.insertLast(2);
-            second.insertLast(9);
-            second.insertLast(14);
+            second.insertLast(3);
+            second.insertLast(4);
+            second.insertLast(5);
+            second.insertLast(6);
+
+            second.MiddleNode(second.get(0));
 
             LL ans = LL.merge(first, second);
             ans.display();
