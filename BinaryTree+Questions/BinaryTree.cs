@@ -179,5 +179,35 @@ namespace BinaryTree_Questions
             return null;
 
         }
+
+        //https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
+        public int MaxDepth(BinaryTree tree)
+        {
+            Node root = tree.root;
+            return MaxDepth(root);
+
+        }
+
+        private int MaxDepth(Node root)
+        {
+            int c = calculate(root, 0);
+
+            return c;
+
+        }
+
+        private int calculate(Node root, int c)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            int left = calculate(root.left, c++);
+            int right = calculate(root.right, c++);
+
+            return Math.Max(left, right) + 1;
+            
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace BinaryTree_Questions
             bt.populate();
             bt.isBalanced(bt);
 
-            bt.Traversal(bt);
+            bt.MaxDepth(bt);
 
             int[] arr = bt.TraversalValues(bt);
 
