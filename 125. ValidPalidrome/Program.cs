@@ -12,6 +12,7 @@ namespace _125.ValidPalidrome
         static void Main(string[] args)
         {
             Console.WriteLine(IsPalindrome("A man, a plan, a canal: Panama"));
+            Console.WriteLine(IsPalindromeReview("A man, a plan, a canal: Panama"));
         }
 
         public static bool IsPalindrome(string s)
@@ -54,6 +55,43 @@ namespace _125.ValidPalidrome
                 }
             }
             return true;
+
+        }
+
+        public static bool IsPalindromeReview(string s)
+        {
+            if(s.Length < 2) return true;
+            
+            int start = 0;
+            int end = s.Length - 1;
+
+            s = s.ToLowerInvariant();
+
+            while( start < end )
+            {
+
+                char leftchar = s[start];
+                char rightChar = s[end];
+
+                if (!Char.IsLetterOrDigit(leftchar))
+                {
+                    start++;
+                }
+                else if (!Char.IsLetterOrDigit(rightChar))
+                {
+                    end--;
+                }
+                else
+                {
+                    if (leftchar != rightChar) return false;
+
+                    start++;
+                    end--;
+                }
+                
+            }
+            return true;
+
 
         }
     }

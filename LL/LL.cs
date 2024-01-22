@@ -193,7 +193,6 @@ namespace LL
             tail.next = null;
         }
 
-        // https://leetcode.com/problems/merge-two-sorted-lists/submissions/
         public static LL merge(LL first, LL second)
         {
             Node f = first.head;
@@ -232,7 +231,35 @@ namespace LL
             return ans;
         }
 
-        // recursion reverse
+        //https://leetcode.com/problems/merge-two-sorted-lists/submissions/
+        public static Node mergeReview(Node first, Node second)
+        {
+            Node dummy = new Node(0);
+            Node tail = dummy;
+
+            while(first != null && second != null)
+            {
+                if(first.value > second.value)
+                {
+                    tail.next = second;
+                    second = second.next;
+                    tail = tail.next;
+                }
+                else
+                {
+                    tail.next = first;
+                    first = first.next;
+                    tail = tail.next;
+                }
+            }
+
+            tail.next = (first != null) ? second : first ;
+
+            return dummy.next;
+
+        }
+
+        //// recursion reverse
         private void reverse(Node node)
         {
             if (node == tail)
