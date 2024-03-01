@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "198. House Robber", "198. H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "56. MergeIntervals", "56. MergeIntervals\56. MergeIntervals.csproj", "{6F1580AA-4A93-4BBD-B327-C06408124B9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2864. Maximum Odd Binary Number", "2864. Maximum Odd Binary Number\2864. Maximum Odd Binary Number.csproj", "{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{6F1580AA-4A93-4BBD-B327-C06408124B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F1580AA-4A93-4BBD-B327-C06408124B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F1580AA-4A93-4BBD-B327-C06408124B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -476,6 +482,7 @@ Global
 		{D38D4F01-F945-4552-9C31-5E57D2FF3F6B} = {B0DD5BF7-949A-4AE8-8EF8-C6B978F5D61D}
 		{92BCC248-3D89-40BB-B66A-9C1FEDBF59A1} = {40C16341-1E66-4FCC-9786-3EB170AE389D}
 		{6F1580AA-4A93-4BBD-B327-C06408124B9E} = {C4A06814-DCEF-4B18-B424-42BE079617C0}
+		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830} = {00553BF2-7BDB-4B94-9A36-A103FCDC2254}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7CDE47F-2C5B-4671-B17D-98336F7FCC8F}
