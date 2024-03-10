@@ -196,6 +196,47 @@ namespace BinaryTree_Questions
 
         }
 
+        //https://leetcode.com/problems/binary-tree-level-order-traversal/
+        public IList<IList<int>> LevelOrder(BinaryTree root)
+        {
+            var queue = new Queue<BinaryTree>();
+            IList<IList<int>> list = new List<IList<int>>();
+
+            if (root == null)
+            {
+                return list;
+            }
+
+            queue.Enqueue(root);
+
+            while (queue.Count() > 0)
+            {
+
+                int level = queue.Count();
+
+                List<int> subLevel = new List<int>();
+
+                for (int i = 0; i < level; i++)
+                {
+
+                    if (queue.Peek().left != null)
+                    {
+                        queue.Enqueue(queue.Peek().left);
+                    }
+                    if (queue.Peek().right != null)
+                    {
+                        queue.Enqueue(queue.Peek().right);
+                    }
+                    subLevel.Add(queue.Dequeue().val);
+                }
+                list.Add(subLevel);
+            }
+
+            return list;
+        }
+
+
+
         private int calculate(Node root, int c)
         {
             if (root == null)
