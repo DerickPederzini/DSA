@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3005. Count Elements With M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Median Of 2 sorted arr", "4. Median Of 2 sorted arr\4. Median Of 2 sorted arr.csproj", "{46085C85-0085-4DF8-92F1-8EC7CF8F0C98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "205. Isomorphic Strings", "205. Isomorphic Strings\205. Isomorphic Strings.csproj", "{507C0741-A51B-4445-8A73-BE658DE6E7E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,10 @@ Global
 		{46085C85-0085-4DF8-92F1-8EC7CF8F0C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46085C85-0085-4DF8-92F1-8EC7CF8F0C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46085C85-0085-4DF8-92F1-8EC7CF8F0C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507C0741-A51B-4445-8A73-BE658DE6E7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507C0741-A51B-4445-8A73-BE658DE6E7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507C0741-A51B-4445-8A73-BE658DE6E7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507C0741-A51B-4445-8A73-BE658DE6E7E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -497,6 +503,7 @@ Global
 		{6D66E177-4B18-4CD7-BBC0-A2AC3C85E830} = {00553BF2-7BDB-4B94-9A36-A103FCDC2254}
 		{F765E07A-CB6C-4FC9-9046-763DBC024711} = {C4A06814-DCEF-4B18-B424-42BE079617C0}
 		{46085C85-0085-4DF8-92F1-8EC7CF8F0C98} = {C4A06814-DCEF-4B18-B424-42BE079617C0}
+		{507C0741-A51B-4445-8A73-BE658DE6E7E4} = {00553BF2-7BDB-4B94-9A36-A103FCDC2254}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7CDE47F-2C5B-4671-B17D-98336F7FCC8F}
