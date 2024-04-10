@@ -11,7 +11,7 @@ namespace _49.Group_Anagrams
     {
         static void Main(string[] args)
         {
-            GroupAnagrams(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+            GroupAnagrams(new string[] { "ab", "ba", "tan", "ate", "nat", "bat" });
         }
         public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
@@ -23,6 +23,7 @@ namespace _49.Group_Anagrams
                 foreach(char c in strs[i])
                 {
                     count[c - 'a']++;
+                    Console.WriteLine(count[c - 'a']);
                 }
 
                 string key = new string(count);
